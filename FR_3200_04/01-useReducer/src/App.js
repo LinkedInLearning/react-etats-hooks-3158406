@@ -1,7 +1,20 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useReducer } from "react";
 import "./App.css";
 
+const initialState = {
+  count: 0,
+  intValue: null,
+};
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "change": {
+    }
+  }
+}
+
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
   const inputRef = useRef();
   const [count, setCount] = useState(0);
   const [color, setColor] = useState("#FFFFFF");
