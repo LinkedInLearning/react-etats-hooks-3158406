@@ -1,7 +1,39 @@
 import { useState, useEffect, useRef, useReducer } from "react";
 import "./App.css";
 
+const initialState = {
+  count: 0,
+  intValue: null,
+};
+function reducer(state, action) {
+  switch (action.type) {
+    case "change":
+      return {
+        ...state,
+        intValue: action.payload.value,
+      };
+    case "increment":
+      return {
+        ...state,
+        count: state.count + parseInt(state.intValue),
+      };
+    case "decrement":
+      return {
+        ...state,
+        count: state.count - parseInt(state.intValue),
+      };
+    case "reset":
+      return {
+        ...state,
+        count: 0,
+      };
+    default:
+      return state;
+  }
+}
+
 function Counter() {
+  const [state, dispatch] = useReducer(reducer, initialState);
   const inputRef = useRef();
   const [color, setColor] = useState("#FFFFFF");
 
