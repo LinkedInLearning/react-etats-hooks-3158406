@@ -24,7 +24,7 @@ function App() {
         <button onClick={reset}>reset</button>
         <br />
 
-        <input ref={inputRef} type="number" onChange={handleOnChange} />
+        <input type="number" onChange={handleOnChange} />
         <div className="App-buttons">
           <button className="App-button" onClick={decrement}>
             -
