@@ -1,8 +1,7 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const inputRef = useRef();
   const [count, setCount] = useState(0);
   const [color, setColor] = useState("#FFFFFF");
   const [value, setValue] = useState(null);
