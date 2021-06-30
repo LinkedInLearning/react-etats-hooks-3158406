@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef, useReducer } from "react";
+import { useState, useEffect, useRef, useReducer, useContext } from "react";
+import { Context } from "./context";
 import "./App.css";
 
 const initialState = {
@@ -33,6 +34,7 @@ function reducer(state, action) {
 }
 
 function Counter() {
+  const value = useContext(Context);
   const [state, dispatch] = useReducer(reducer, initialState);
   const inputRef = useRef();
   const [color, setColor] = useState("#FFFFFF");
