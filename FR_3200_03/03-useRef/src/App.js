@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./App.css";
 
 function App() {
+  const inputRef = useRef();
   const [count, setCount] = useState(0);
   const [color, setColor] = useState("#FFFFFF");
   const [value, setValue] = useState(null);
@@ -24,7 +25,7 @@ function App() {
         <button onClick={reset}>reset</button>
         <br />
 
-        <input type="number" onChange={handleOnChange} />
+        <input ref={inputRef} type="number" onChange={handleOnChange} />
         <div className="App-buttons">
           <button className="App-button" onClick={decrement}>
             -
