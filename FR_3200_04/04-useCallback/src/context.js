@@ -1,4 +1,10 @@
-import { createContext, useState, useReducer, useMemo } from "react";
+import {
+  createContext,
+  useState,
+  useReducer,
+  useMemo,
+  useCallback,
+} from "react";
 
 const initialState = {
   count: 0,
@@ -39,8 +45,12 @@ const Provider = ({ children }) => {
 
   const handleOnChange = (e) =>
     dispatch({ type: "change", payload: { value: e.target.value } });
-  const increment = () => !!state.intValue && dispatch({ type: "increment" });
-  const decrement = () => !!state.intValue && dispatch({ type: "decrement" });
+  const increment = useCallback(() => {
+    !!state.intValue && dispatch({ type: "increment" });
+  }, [state.intValue]);
+  const decrement = useCallback(() => {
+    !!state.intValue && dispatch({ type: "decrement" });
+  }, [state.intValue]);
   const reset = () => dispatch({ type: "reset" });
 
   const value = useMemo(() => {
