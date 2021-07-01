@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 
 export const Context = React.createContext();
 
@@ -35,8 +35,24 @@ function reducer(state, action) {
 
 const Provider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  return (
-    <Context.Provider value={[state, dispatch]}>{children}</Context.Provider>
-  );
+  const [color, setColor] = useState("#FFFFFF");
+
+  const handleOnChange = (e) =>
+    dispatch({ type: "change", payload: { value: e.target.value } });
+
+  const increment = () => !!state.intValue && dispatch({ type: "increment" });
+  const decrement = () => !!state.intValue && dispatch({ type: "decrement" });
+  const reset = () => dispatch({ type: "reset" });
+
+  const value = {
+    color,
+    state,
+    changeColor: setColor,
+    handleOnChange,
+    increment,
+    decrement,
+    reset,
+  };
+  return <Context.Provider value={value}>{children}</Context.Provider>;
 };
 export default Provider;
