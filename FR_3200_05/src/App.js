@@ -31,16 +31,23 @@ function Controls() {
   );
 }
 
+function ThemeControls() {
+  const { theme, updateSettings } = useThemeContext();
+  return <button onClick={updateSettings}>{theme}</button>;
+}
+
 function App() {
   const { changeColor, state } = useCounterContext();
+  const { themeSettings } = useThemeContext();
   useEffect(() => {
-    changeColor(state.count < 0 ? "#c0392b" : "#FFFFFF");
-  }, [state.count, changeColor]);
+    changeColor(state.count < 0 ? "#c0392b" : themeSettings);
+  }, [state.count, changeColor, themeSettings]);
 
   return (
     <div className="App">
       <h1>Calculator</h1>
-      <header className="App-header">
+      <ThemeControls />
+      <header className="App-header" style={themeSettings}>
         <Counter />
         <Controls />
       </header>
