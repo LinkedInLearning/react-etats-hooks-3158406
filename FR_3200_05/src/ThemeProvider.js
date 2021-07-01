@@ -27,3 +27,14 @@ const ThemeProvider = ({ children }) => {
     <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
   );
 };
+export const useThemeContext = () => {
+  const { isOn, updateSettings } = useContext(ThemeContext);
+  return useMemo(() => {
+    return {
+      theme: isOn ? "Off" : "On",
+      themeSettings: isOn ? themes.light : themes.dark,
+      updateSettings,
+    };
+  }, [isOn, updateSettings]);
+};
+export default ThemeProvider;

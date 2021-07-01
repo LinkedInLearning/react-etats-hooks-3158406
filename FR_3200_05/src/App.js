@@ -1,5 +1,6 @@
 import { useEffect, useRef, useContext } from "react";
 import { useCounterContext } from "./context";
+import { useThemeContext } from "./ThemeProvider";
 import "./App.css";
 
 function Counter() {
