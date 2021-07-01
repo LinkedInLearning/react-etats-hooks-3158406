@@ -1,4 +1,4 @@
-import { createContext, useState, useReducer } from "react";
+import { createContext, useState, useReducer, useMemo } from "react";
 
 const initialState = {
   count: 0,
@@ -43,15 +43,18 @@ const Provider = ({ children }) => {
   const decrement = () => !!state.intValue && dispatch({ type: "decrement" });
   const reset = () => dispatch({ type: "reset" });
 
-  const value = {
-    color,
-    state,
-    changeColor: setColor,
-    handleOnChange,
-    increment,
-    decrement,
-    reset,
-  };
+  const value = useMemo(() => {
+    return {
+      color,
+      state,
+      changeColor: setColor,
+      handleOnChange,
+      increment,
+      decrement,
+      reset,
+    };
+  }, [state, color, decrement, increment]);
+
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };
 export default Provider;
