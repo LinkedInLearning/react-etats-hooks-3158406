@@ -1,10 +1,10 @@
 import { useEffect, useRef, useContext } from "react";
-import { Context } from "./context";
+import { useCounterContext } from "./context";
 import "./App.css";
 
 function Counter() {
   const inputRef = useRef();
-  const { state, color, reset, handleOnChange } = useContext(Context);
+  const { state, color, reset, handleOnChange } = useCounterContext();
   return (
     <>
       <p className="App-p" style={{ color: color }}>
@@ -17,7 +17,7 @@ function Counter() {
   );
 }
 function Controls() {
-  const { decrement, increment } = useContext(Context);
+  const { decrement, increment } = useCounterContext();
   return (
     <div className="App-buttons">
       <button className="App-button" onClick={decrement}>
@@ -31,7 +31,7 @@ function Controls() {
 }
 
 function App() {
-  const { changeColor, state } = useContext(Context);
+  const { changeColor, state } = useCounterContext();
   useEffect(() => {
     changeColor(state.count < 0 ? "#c0392b" : "#FFFFFF");
   }, [state.count, changeColor]);

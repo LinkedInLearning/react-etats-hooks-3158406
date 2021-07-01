@@ -68,4 +68,8 @@ const Provider = ({ children }) => {
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };
 
+export const useCounterContext = () => {
+  return useContext(Context);
+};
+
 export default Provider;
