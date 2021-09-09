@@ -15,15 +15,18 @@ La branche `02_03_f` correspond au code à la fin de la vidéo.
 La branche master correspond au code à la fin de la formation. 
 
 ## Installation
-    Pour utiliser ces fichiers d’exercice, vous avez besoin de : 
-    
-    [Liste des logiciels/dépendances utiles à la formation] 
-    
-    Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
-    
-    [Instructions spécifiques au cours] 
 
+Pour utiliser ces fichiers d’exercice, vous avez besoin : 
 
+* d'un code éditeur (recommandé: [VSCode](https://code.visualstudio.com/))
+* de télécharger [NodeJS et NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
+
+Pour chaque dossier de cours, 
+* exécutez la commande `npm install` depuis votre terminal
+* puis, `npm start` pour lancer l'application 
+*ouvrez [http://localhost:3000](http://localhost:3000) pour visualiser dans le navigateur
 
 ### Instructeur
 
