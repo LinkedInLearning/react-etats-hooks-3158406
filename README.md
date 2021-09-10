@@ -1,4 +1,4 @@
-# Nom final de la formation
+# React : Gérer les états avec les Hooks
 Ce dossier Repository est lié au cours [React : Gérer les états avec les Hooks][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](https://www.linkedin.com/learning).
 
 ![Nom final de la formation][lil-thumbnail-url] 
