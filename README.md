@@ -1,5 +1,5 @@
 # Nom final de la formation
-Ce dossier Repository est lié au cours [Nom final de la formation][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](https://www.linkedin.com/learning).
+Ce dossier Repository est lié au cours [React : Gérer les états avec les Hooks][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](https://www.linkedin.com/learning).
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
@@ -33,5 +33,5 @@ Pour chaque dossier de cours,
 
  Retrouvez [Sandy Ludosky](https://www.linkedin.com/learning/instructors/sandy-ludosky) sur LinkedIn Learning.
 
-[lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
+[lil-course-url]: https://www.linkedin.com/learning/react-gerer-les-etats-avec-les-hooks
 [lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg
