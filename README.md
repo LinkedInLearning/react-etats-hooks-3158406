@@ -3,7 +3,7 @@ Ce dossier Repository est lié au cours [React : Gérer les états avec les Hook
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
+Dans cette formation qui s'adresse aux développeurs React, la bibliothèque JavaScript libre de création d'applications web monopage, vous apprendrez à vous servir des hooks et à les gérer. En compagnie de Sandy Ludosky, et après avoir passé en revue les principes de base et les prérequis indispensables, vous mettrez en œuvre les hooks à l'aide de travaux pratiques, et vous apprendrez à gérer des logiques, à distribuer des actions, à gérer et à modifier des états. Puis, vous verrez comment créer et utiliser vos propres hooks. 
 
 ## Instructions
 Ce dossier Repository a des branches pour chacune des vidéos du cours. Vous pouvez utiliser le menu des Branches sur GitHub afin d’accéder aux passages qui vous intéressent. Vous pouvez également rajouter `/tree/BRANCH_NAME` à l’URL afin d’accéder à la branche qui vous intéresse. 
@@ -34,4 +34,4 @@ Pour chaque dossier de cours,
  Retrouvez [Sandy Ludosky](https://www.linkedin.com/learning/instructors/sandy-ludosky) sur LinkedIn Learning.
 
 [lil-course-url]: https://www.linkedin.com/learning/react-gerer-les-etats-avec-les-hooks
-[lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg
+[lil-thumbnail-url]: https://cdn.lynda.com/course/3158406/3158406-1630594260310-16x9.jpg
