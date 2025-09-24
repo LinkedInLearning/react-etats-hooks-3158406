@@ -5,6 +5,8 @@ Ce dossier Repository est lié au cours [React : Gérer les états avec les Hook
 
 Dans cette formation qui s'adresse aux développeurs React, la bibliothèque JavaScript libre de création d'applications web monopage, vous apprendrez à vous servir des hooks et à les gérer. En compagnie de Sandy Ludosky, et après avoir passé en revue les principes de base et les prérequis indispensables, vous mettrez en œuvre les hooks à l'aide de travaux pratiques, et vous apprendrez à gérer des logiques, à distribuer des actions, à gérer et à modifier des états. Puis, vous verrez comment créer et utiliser vos propres hooks. 
 
+La meilleure façon d'apprendre un langage est de l'utiliser dans la pratique. C'est pourquoi ce cours est intégré à GitHub Codespaces, un environnement de développement instantané « dans le nuage » qui offre toutes les fonctionnalités de votre IDE préféré sans nécessiter de configuration sur une machine locale. Avec Codespaces, vous pouvez vous exercer à partir de n'importe quelle machine, à tout moment, tout en utilisant un outil que vous êtes susceptible de rencontrer sur votre lieu de travail. 
+
 ## Instructions
 Ce dossier Repository a des branches pour chacune des vidéos du cours. Vous pouvez utiliser le menu des Branches sur GitHub afin d’accéder aux passages qui vous intéressent. Vous pouvez également rajouter `/tree/BRANCH_NAME` à l’URL afin d’accéder à la branche qui vous intéresse. 
 
